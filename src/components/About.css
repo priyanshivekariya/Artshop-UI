@@ -1,0 +1,47 @@
+/* About.css */
+.about-page {
+  margin-top: 60px; /* Adjust according to header height */
+  padding: 20px;
+  background: linear-gradient(45deg, #a2c2e5, #d0e4f3, #b4d0f0); /* Softer blue gradient */
+  background-size: 300% 300%; /* For smooth animation */
+  animation: gradientAnimation 15s ease infinite; /* Longer duration for a more subtle effect */
+  height: calc(100vh - 60px); /* Fit within viewport minus header height */
+  overflow-y: auto; /* Allow scrolling within the content if necessary */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.text {
+  text-align: center; /* Center-align the header text */
+  color: #333333; /* Darker text color for contrast */
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+p {
+  line-height: 1.6; /* Increase line spacing for readability */
+  margin-bottom: 15px; /* Space between paragraphs */
+  color: #333333; /* Darker color for text to stand out on lighter background */
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5rem; /* Adjust font size on smaller screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust font size on smaller screens */
+  }
+}

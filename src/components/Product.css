@@ -1,0 +1,109 @@
+/* General container styling */
+.container {
+  position: relative; /* Ensure it can be used as a reference for positioning */
+  overflow: hidden; /* Prevents any overflow of the animated background */
+  padding: 20px;
+  background: linear-gradient(45deg, #a8d5ba, #e0f2e9, #b9fbc0); /* Soft green gradient colors */
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease infinite; /* Animation for smooth transition */
+}
+
+/* Grid layout for products */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for each product card */
+.product-card {
+  background-color: #fff; /* Fallback color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+/* Hover effect on product cards */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Title styling */
+.product-card .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Price styling */
+.product-card .price {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+.butn {
+  background-color: #ffcc00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.butn:hover {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-card {
+    flex: 1 0 48%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .product-card {
+    flex: 1 0 30%;
+  }
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

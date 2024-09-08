@@ -1,0 +1,34 @@
+.home {
+  position: relative;
+  text-align: center;
+}
+
+.back_img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner {
+  position: relative;
+  padding: 20px;
+  color: black; /* Change text color to black */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the banner covers the full viewport height */
+}
+
+.banner p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}

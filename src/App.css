@@ -1,0 +1,89 @@
+/* App.css */
+
+/* General reset and body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center the form container */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the child container */
+.child {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Style the header */
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Style the input fields */
+.field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.field:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Style the checkbox */
+input[type='checkbox'] {
+  margin-right: 8px;
+}
+
+/* Style the submit button */
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
